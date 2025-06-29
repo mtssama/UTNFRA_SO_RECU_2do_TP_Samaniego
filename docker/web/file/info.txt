@@ -1,0 +1,3 @@
+Nombre de tu usuario: msamaniego
+ID de tu usuario: 1002
+Hash pass de tu usuario: $6$axylk1ih35Uvhgor$VpI41iOY/3pzcCoYIErSsyRcv0JPcvRN0DsOjkX6wluLbyPUVWmdPPUuf6xiREi76WXLJ2X5RXuLIiNoqVo0B0

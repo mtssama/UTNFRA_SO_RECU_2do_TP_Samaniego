@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  web:
+    image: mtssama/web2-samaniego
+    ports:
+      - "81:80"
+    volumes:
+      - ./web/file:/usr/share/nginx/html/file

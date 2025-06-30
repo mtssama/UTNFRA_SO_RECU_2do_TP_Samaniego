@@ -1,0 +1,8 @@
+- name: Playbook Punto D
+  hosts: localhost
+  become: yes
+  roles:
+    - 2PRecuperatorio
+    - Crea_Carpetas_msamaniego
+    - Cambia_Propiedad_msamaniego
+    - Sudoers_msamaniego

@@ -1,0 +1,21 @@
+- name: Crear grupo GProfesores
+  group:
+    name: GProfesores
+
+- name: Crear grupo GAlumnos
+  group:
+    name: GAlumnos
+
+- name: Crear usuario profesor
+  user:
+    name: profesor
+    group: GProfesores
+    shell: /bin/bash
+    create_home: yes
+
+- name: Crear usuario alumno
+  user:
+    name: alumno
+    group: GAlumnos
+    shell: /bin/bash
+    create_home: yes

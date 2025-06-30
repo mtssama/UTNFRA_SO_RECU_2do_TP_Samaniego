@@ -1,0 +1,6 @@
+- name: Cambiar propietario de /home/2p a msamaniego
+  file:
+    path: /home/2p
+    owner: msamaniego
+    group: msamaniego
+    recurse: yes

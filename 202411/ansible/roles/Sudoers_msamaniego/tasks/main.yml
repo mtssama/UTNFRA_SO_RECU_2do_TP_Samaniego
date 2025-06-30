@@ -1,0 +1,7 @@
+- name: Permitir sudo sin contraseña al usuario msamaniego
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^msamaniego'
+    line: 'msamaniego ALL=(ALL) NOPASSWD:ALL'
+    validate: '/usr/sbin/visudo -cf %s'

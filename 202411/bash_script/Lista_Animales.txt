@@ -1,0 +1,5 @@
+Ballena;Agua;
+Perro;Tierra;Mamifero
+Gato;Tierra;Mamifero
+Gallina;Tierra;Oviparo
+Pato;Tierra;Oviparo

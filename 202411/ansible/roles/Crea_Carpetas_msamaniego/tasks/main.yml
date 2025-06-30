@@ -1,9 +1,0 @@
-- name: Crear estructura de carpetas para msamaniego
-  file:
-    path: "/home/msamaniego/{{ item }}"
-    state: directory
-    mode: '0755'
-  with_items:
-    - proyectos
-    - documentos
-    - descargas

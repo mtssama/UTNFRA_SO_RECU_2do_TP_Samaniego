@@ -1,0 +1,11 @@
+---
+- name: Playbook Punto D
+  hosts: 127.0.0.1
+  connection: local
+#  become: true
+
+  roles:
+    - 2PRecuperatorio
+    - Crea_Carpetas_msamaniego
+    - Cambia_Propiedad_msamaniego
+#    - Sudoers_msamaniego

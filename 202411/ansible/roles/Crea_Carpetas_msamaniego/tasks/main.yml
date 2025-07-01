@@ -1,0 +1,7 @@
+---
+- name: Crear carpeta logs dentro del repositorio
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/UTNFRA_SO_RECU_2do_TP_Samaniego/202411/logs"
+    state: directory
+    owner: msamaniego
+    mode: '0755'

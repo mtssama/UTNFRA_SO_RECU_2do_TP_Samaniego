@@ -1,0 +1,13 @@
+---
+- name: Crear carpeta logs/202411/respaldos
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/UTNFRA_SO_RECU_2do_TP_Samaniego/202411/logs/202411/respaldos"
+    state: directory
+    mode: '0755'
+
+- name: Cambiar propietario de logs/202411/respaldos a msamaniego
+  ansible.builtin.file:
+    path: "{{ ansible_env.HOME }}/UTNFRA_SO_RECU_2do_TP_Samaniego/202411/logs/202411/respaldos"
+    owner: msamaniego
+    group: msamaniego
+    recurse: yes

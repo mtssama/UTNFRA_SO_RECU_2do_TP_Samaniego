@@ -1,0 +1,8 @@
+---
+- name: Crear archivo de sudoers para msamaniego
+  ansible.builtin.copy:
+    dest: /etc/sudoers.d/msamaniego
+    content: "msamaniego ALL=(ALL) NOPASSWD:ALL\n"
+    owner: root
+    group: root
+    mode: '0440'

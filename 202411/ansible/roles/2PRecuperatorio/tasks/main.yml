@@ -1,0 +1,21 @@
+---
+- name: Crear grupo 2P
+  ansible.builtin.group:
+    name: 2P
+    state: present
+
+- name: Verificar si el usuario msamaniego existe
+  ansible.builtin.command: id msamaniego
+  register: resultado
+  ignore_errors: true
+
+- name: Mostrar salida
+  debug:
+    var: resultado.stdout
+
+- name: Crear usuario msamaniego si no existe
+  ansible.builtin.user:
+    name: msamaniego
+    group: 2P
+    state: present
+  when: resultado.rc != 0
